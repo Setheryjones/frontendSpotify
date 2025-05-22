@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
 function App() {
+  let handleLogin = () => {
+    window.location.href = 'https://spoify-converter.onrender.com/spotify/login'
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style = {{textAlign: 'center', marginTop: '100px'}}>
+      <h1> Spotify Playlist App</h1>
+      <p>Login with your Spotify account to begin</p>
+      <button onClick = {handleLogin} style = {{ padding: '12px 20px', fontSize: '16px' }}>
+        Log in with Spotify
+      </button>
     </div>
   );
 }

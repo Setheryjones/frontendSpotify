@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from '@headlessui/react';
 
 
 
@@ -12,10 +11,14 @@ function Home() {
     <div className="App" style = {{textAlign: 'center', marginTop: '100px'}}>
       <h1> Spotify Playlist App</h1>
       <p>Login with your Spotify account to begin</p>
-      <button onClick = {handleLogin} className="rounded bg-sky-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500">
-        Log in with Spotify
-      </button>
+        <button onClick = {handleLogin} className="bg-sky-600 text-white px-4 py-2 rounded text-sm hover:bg-sky-500 active:bg-sky-700">
+          Log in with Spotify
+        </button>
+      <h2 className="text-3xl font-bold text-red-600 mb-4">
+        Tailwind is definitely working
+      </h2>
     </div>
+    
   );
 }
 

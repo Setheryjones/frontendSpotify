@@ -7,19 +7,16 @@ function Home() {
   let handleLogin = () => {
     window.location.href = 'https://spoify-converter.onrender.com/spotify/login'
   };
-  return (
-    <div className="App" style = {{textAlign: 'center', marginTop: '100px'}}>
-      <h1> Spotify Playlist App</h1>
-      <p>Login with your Spotify account to begin</p>
-        <button onClick = {handleLogin} className="bg-sky-600 text-white px-4 py-2 rounded text-sm hover:bg-sky-500 active:bg-sky-700">
-          Log in with Spotify
-        </button>
-      <h2 className="text-3xl font-bold text-red-600 mb-4">
-        Tailwind is definitely working
-      </h2>
-    </div>
-    
-  );
+return (
+<div className="min-h-screen bg-gray-800 text-white justify-center text-center items-center flex flex-col">
+    <h1 classname = "bold "> Spotify Converter App by Sethery </h1>
+    <button 
+    onClick = {handleLogin}  
+    className = "box-border h-10 w-40 border-2 border-teal-900 shadow-slate-700 rounded hover:text-teal-100">
+      Login Here
+    </button>
+</div>
+);
 }
 
 
